@@ -147,6 +147,8 @@ map <F6> :setlocal spelllang=ru spell! <CR>
 
 " F7 - показать пробелы и табы
 map <F7> :set list! <CR>
+" Shift-F7 - использовать табы вместо пробелов
+map <S-F7> :set noet! <CR>
 
 " F8 - отключение нумерации (всей - относительной)
 map <F8> :set number! relativenumber! <CR>
