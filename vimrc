@@ -147,6 +147,7 @@ map <F6> :setlocal spelllang=ru spell! <CR>
 
 " F7 - показать пробелы и табы
 map <F7> :set list! <CR>
+
 " Shift-F7 - использовать табы вместо пробелов
 map <S-F7> :set noet! <CR>
 
@@ -154,19 +155,19 @@ map <S-F7> :set noet! <CR>
 map <F8> :set number! relativenumber! <CR>
 map <S-F8> :set relativenumber! <CR>
 
+" F10 - запуск скрипта Python
+" nmap <F10> <F5>:!clear;python % <CR>
+" imap <F10> <Esc><F5>:!clear;python % <CR>
+" vmap <F10> <Esc><F5>:!clear;python % <CR>
+
 " F11 - удаление повторяющихся пробелов + пробелов в конце предложения
-map <F11> :%s/\  */\ /g<CR> <bar> :%s/\ $//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
+" map <F11> :%s/\  */\ /g<CR> <bar> :%s/\ $//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
 
 " F12 - полная русская раскладка (на выборе English)
 map <F12> :set keymap=russian-jcukenwin <CR>
 imap <F12> <Esc>:set keymap=russian-jcukenwin<CR>i
 map <S-F12> :set keymap= <CR>
 imap <S-F12> <Esc>:set keymap=<CR>i
-
-" F10 - запуск скрипта Python
-" nmap <F10> <F5>:!clear;python % <CR>
-" imap <F10> <Esc><F5>:!clear;python % <CR>
-" vmap <F10> <Esc><F5>:!clear;python % <CR>
 
 " автодополнения i_ctrl-x_:
 " ctrl-l - добавить строку
@@ -214,6 +215,7 @@ imap <S-F12> <Esc>:set keymap=<CR>i
 " Repeat - расширенный повтор по "."
 " Session - расширенные сессии для Vim, требует:
 " (Misc - различные автонастройки скриптов Vim)
+" Startify - стартовый экран
 " Supertab - дополнение по <Tab>
 " Surround - обернуть текст
 " Tags - теги (для Linux):
@@ -631,6 +633,13 @@ let g:session_autoload = 'no'
 " :SaveSession name - сохранение сессии (без name - default)
 " :OpenSession name - загрузка сессии (без name - default)
 " :DeleteSession name - удаление сессии (без name - default)
+" ----------------------------------------
+
+" Startify - стартовый экран
+" ---------------
+"  https://github.com/mhinz/vim-startify
+Plug 'mhinz/vim-startify'
+" ---------------
 " ----------------------------------------
 
 " Supertab - дополнение по <Tab>
