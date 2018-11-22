@@ -17,3 +17,9 @@ git clone https://github.com/koljasha/vim && \
 cd vim && ./windows.sh && cd .. && \
 gvim -c PlugInstall
 ```
+
+* в .vimrc поправить версию Python:
+```
+" используем PowerLine
+	set rtp+=/home/koljasha/soft/conda/lib/python3.6/site-packages/powerline/bindings/vim
+```
