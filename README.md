@@ -18,7 +18,7 @@ cd vim && ./windows.sh && cd .. && \
 gvim -c PlugInstall
 ```
 
-* в .vimrc поправить версию Python:
+* в .vimrc поправить версию Python и пользователя:
 ```
 " используем PowerLine
 	set rtp+=/home/koljasha/soft/conda/lib/python3.6/site-packages/powerline/bindings/vim
