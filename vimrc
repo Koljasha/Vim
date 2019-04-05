@@ -162,6 +162,8 @@ map <S-F8> :set relativenumber! <CR>
 
 " F11 - удаление повторяющихся пробелов + пробелов в конце предложения
 " map <F11> :%s/\  */\ /g<CR> <bar> :%s/\ $//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
+" F11 - удаление пустых строк (возможно с пробелами)
+" map <F11> :%s/^\s*\n//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
 
 " F12 - полная русская раскладка (на выборе English)
 map <F12> :set keymap=russian-jcukenwin <CR>
