@@ -258,7 +258,7 @@ imap <S-F12> <Esc>:set keymap=<CR>i
 	" Tagbar-CSS - теги для css
 	" EasyTags - генерация файла тегов (отключен)
 " Xkbswitch - смена на En при переходе в командный режим
-" Jedi-vim - IDE для Python
+" Jedi-vim - IDE для Python (для Python)
 " YCM + other code (вручную раскомментировать, только для Linux):
 	" YCM-Generator - генератор .ycm_extra_conf.py (отключен)
 	" YouCompleteMe - автодополнение кода
