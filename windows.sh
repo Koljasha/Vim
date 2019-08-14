@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # запуск строго как ./windows.sh или bash windows.sh
-# из каталога ..../Vim/ или ..../vim/ (git clone)
+# из каталога ..../oh-my-vim/ (git clone)
 # через Git Bash от имени Администратора
 
 # Внимание!!! старые данные ~/vimfiles/ и _vim* будут удалены
@@ -56,7 +56,7 @@ fi
 
 # удаление всех каталогов установки (git clone)
 cd ../
-rm -rf Vim/
+rm -rf oh-my-vim/
 cd ~/
 echo "*** Installation directories removed"
 echo
