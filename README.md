@@ -18,7 +18,7 @@ vim -c PlugInstall
     set rtp+=/home/koljasha/soft/conda/lib/python3.7/site-packages/powerline/bindings/vim
 ```
 
-Пример для Windows (**в windows.sh исправить версию Vim и каталоги**)
+Пример для Windows (**в windows.sh исправить версию Vim и, соответственно, каталоги**)
 ```
 git clone https://github.com/koljasha/oh-my-vim.git && \
 cd oh-my-vim/ && ./windows.sh && cd .. && \
