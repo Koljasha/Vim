@@ -258,6 +258,7 @@ imap <S-F12> <Esc>:set keymap=<CR>i
 	" Tagbar-CSS - теги для css
 	" EasyTags - генерация файла тегов (отключен)
 " Xkbswitch - смена на En при переходе в командный режим
+" Jedi-vim - IDE для Python
 " YCM + other code (вручную раскомментировать, только для Linux):
 	" YCM-Generator - генератор .ycm_extra_conf.py (отключен)
 	" YouCompleteMe - автодополнение кода
@@ -765,6 +766,22 @@ if has('unix')
 elseif has('win32') || has('win64')
 	let g:XkbSwitchLib = 'C:\Program Files (x86)\Vim\libxkbswitch\libxkbswitch64.dll'
 endif
+" ----------------------------------------
+
+" Jedi-vim - IDE для Python
+" ---------------
+" https://github.com/davidhalter/jedi-vim
+" (требуется установленный jedi)
+" $ pip install jedi
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+" ---------------
+" Completion <C-Space>
+" Goto assignments <leader>g (typical goto function)
+" Goto definitions <leader>d (follow identifier as far as possible, includes imports and statements)
+" Show Documentation/Pydoc K (shows a popup with assignments)
+" Renaming <leader>r
+" Usages <leader>n (shows all the usages of a name)
+" Open module, e.g. :Pyimport os (opens the os module)
 " ----------------------------------------
 
 " YouCompleteMe + other code
