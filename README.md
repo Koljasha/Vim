@@ -7,8 +7,8 @@
 
 Пример для Linux:
 ```
-git clone https://github.com/koljasha/vim && \
-cd vim && ./linux.sh && cd .. && \
+git clone https://github.com/koljasha/oh-my-vim.git && \
+cd oh-my-vim/ && ./linux.sh && cd .. && \
 vim -c PlugInstall
 ```
 
@@ -20,7 +20,7 @@ vim -c PlugInstall
 
 Пример для Windows (**в windows.sh исправить версию Vim и каталоги**)
 ```
-git clone https://github.com/koljasha/vim && \
-cd vim && ./windows.sh && cd .. && \
+git clone https://github.com/koljasha/oh-my-vim.git && \
+cd oh-my-vim/ && ./windows.sh && cd .. && \
 gvim -c PlugInstall
 ```
