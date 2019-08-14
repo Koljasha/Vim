@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # запуск строго как ./linux.sh или bash linux.sh
-# из каталога ..../Vim/ или ..../vim/ (git clone)
+# из каталога ..../oh-my-vim/ (git clone)
 
 # Внимание!!! старые данные ~/.vim/ и .vim* будут удалены
 
@@ -86,20 +86,20 @@ fi
 bash powerline.sh
 
 # установка LiveDown
-livedown=$(npm -g ls | grep livedown | wc -l)
-if [ $livedown != "1"  ]
-then
-	npm install -g livedown
-fi
-echo "*** LiveDown installed"
-echo
+# livedown=$(npm -g ls | grep livedown | wc -l)
+# if [ $livedown != "1"  ]
+# then
+# 	npm install -g livedown
+# fi
+# echo "*** LiveDown installed"
+# echo
 
 # копирование скрипта вывода в $HOME
 cp echo_linux.sh ~/
 
 # удаление всех каталогов установки (git clone)
 cd ../
-rm -rf Vim/ vim/
+rm -rf oh-my-vim/
 cd ~/
 echo "*** Installation directories removed"
 echo
