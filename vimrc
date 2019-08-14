@@ -64,6 +64,19 @@ set list
 " табы и пробелы
 set listchars=trail:.,tab:--
 
+" 4 пробела на tab
+set expandtab
+set tabstop=4
+
+" размер сдвига при нажатии на клавиши "<" и ">"
+set shiftwidth=4
+
+" включаем умную автоматическую расстановку отступов
+set smartindent
+
+" наследовать отступы предыдущей строки
+set autoindent
+
 " подсветка текущей строки
 " set cursorline
 " highlight cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
@@ -93,19 +106,6 @@ set wcm=<TAB>
 
 " вывести весь список сразу доступных вариантов
 " set wildmode=list:longest,full
-
-" 4 пробела на tab
-" set expandtab
-set tabstop=4
-
-" размер сдвига при нажатии на клавиши "<" и ">"
-set shiftwidth=4
-
-" включаем умную автоматическую расстановку отступов
-set smartindent
-
-" наследовать отступы предыдущей строки
-set autoindent
 
 " подсветка поиска
 set hlsearch
