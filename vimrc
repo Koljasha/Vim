@@ -218,53 +218,53 @@ imap <S-F12> <Esc>:set keymap=<CR>i
 " ---------------
 " Vim-plug - менеджер плагинов
 
-" Ack - для The Silver Searcher (для Linux)
-" Anyfold - автоматическое свертывание кода (отключен)
-" ArgWrap - схлопывание и захлопывание содержимого скобок
-" Auto Pairs - парные скобки и ковычки
+" отключен - Ack - для The Silver Searcher (для Linux)
+" отключен - Anyfold - автоматическое свертывание кода
+" отключен - ArgWrap - схлопывание и захлопывание содержимого скобок
+" отключен - Auto Pairs - парные скобки и ковычки
 " Buffer Explorer - переключение открытых буферов
 " Color Schemes - цветовые схемы:
 	" PaperColor
-	" Solarized 8: True Colors
-" Ctrlp - нечеткий поиск
-" Ctrlsf - изменение в нескольких файлах + Ack(ag), Multiple Cursors (для Linux)
-" Easy Align - выравнивание текста по параметрам
-" EasyMotion - простые перемещения
+	" отключен - Solarized 8: True Colors
+" отключен - Ctrlp - нечеткий поиск
+" отключен - Ctrlsf - изменение в нескольких файлах (для Linux)
+" отключен - Easy Align - выравнивание текста по параметрам
+" отключен - EasyMotion - простые перемещения
 " Emmet - автонаписание html, css (для html и css)
 " Fixkey - корректная работа Alt-key or Meta-key в терминале
-" Git - дополнение для git (для Linux):
-	" Fugitive - расширение git для Vim
-	" GitGutter - git состояние
-	" GV - просмотр коммитов
+" Git - дополнение для git:
+	" отключен - GitGutter - git состояние
+	" отключен - Fugitive - расширение git для Vim
+	" отключен - GV - просмотр коммитов
 " Lightline - строка статуса (для Windows, для Linux внешний PowerLine)
-" ListToggle - вкл/выкл quickfix и location окон
-" Livedown - автопросмотр MarkDown файлов в браузере (для Linux для markdown)
+" отключен - ListToggle - вкл/выкл quickfix и location окон
+" отключен - Livedown - автопросмотр MarkDown файлов в браузере (для Linux для markdown)
 " Matchit - перемещение по тегам HTML (%) (для HTML)
 " Matchtag - подсветка тегов HTML (для HTML)
 " Move - перемещение текущей строки или выделенных строк вверх или вниз
 " MRU - последние открытые файлы
-" Multiple Cursors - многокурсорное редактирование
+" отключен - Multiple Cursors - многокурсорное редактирование
 " NERD Commenter - комментирование для различных языков
 " NERD Tree - файловый менеджер
 " Polyglot - коллекция языковых пакетов для Vim
 " Repeat - расширенный повтор по "."
-" Session - расширенные сессии для Vim, требует:
-" (Misc - различные автонастройки скриптов Vim)
+" отключен - Session - расширенные сессии для Vim, требует:
+" отключен - (Misc - различные автонастройки скриптов Vim)
 " Startify - стартовый экран
 " Supertab - дополнение по <Tab>
-" Surround - обернуть текст
+" отключен - Surround - обернуть текст
 " Tags - теги (для Linux):
 	" Tagbar - окно-список тегов
-	" Tagbar-CSS - теги для css
-	" EasyTags - генерация файла тегов (отключен)
+	" отключен - Tagbar-CSS - теги для css
+	" отключен - EasyTags - генерация файла тегов
 " Xkbswitch - смена на En при переходе в командный режим
-" Jedi-vim - IDE для Python (для Python)
-" YCM + other code (вручную раскомментировать, только для Linux):
-	" YCM-Generator - генератор .ycm_extra_conf.py (отключен)
+" отключен - Jedi-vim - IDE для Python (для Python)
+" отключен - Snippets - набор сниппетов
+" отключен - (UltiSnips - движок для сниппетов)
+" отключен - Syntastic - синтаксические ошибки кода
+" отключен - YCM (для Linux):
+	" отключен - YCM-Generator - генератор .ycm_extra_conf.py
 	" YouCompleteMe - автодополнение кода
-	" Snippets - набор сниппетов
-	" (UltiSnips - движок для сниппетов)
-	" Syntastic - синтаксические ошибки кода (в YCM)
 " ----------------------------------------
 
 " Vim-plug - менеджер плагинов
@@ -285,24 +285,26 @@ endif
 " (нужен установленный The Silver Searcher)
 " ---------------
 " https://github.com/mileszs/ack.vim
-if has('unix')
-	Plug 'mileszs/ack.vim'
-	" ---------------
-	" вызов :Ack <pattern>
-	let g:ackprg = 'ag --vimgrep'
-	nnoremap <Leader>aa :Ack!<Space>
-endif
+" !!! - 6 строк ниже:
+" if has('unix')
+	" Plug 'mileszs/ack.vim'
+	" " ---------------
+	" " вызов :Ack <pattern>
+	" let g:ackprg = 'ag --vimgrep'
+	" nnoremap <Leader>aa :Ack!<Space>
+" endif
 " ----------------------------------------
 
 " Anyfold - автоматическое свертывание кода
-" ---------------
-" https://github.com/pseewald/vim-anyfold
+" !!! - 13 строк ниже:
+" " ---------------
+" " https://github.com/pseewald/vim-anyfold
 " Plug 'pseewald/vim-anyfold'
-" ---------------
-" свернуть блок - zc
-" развернуть блок - zo
-" закрыть все блоки - zM
-" открыть все блоки - zR
+" " ---------------
+" " свернуть блок - zc
+" " развернуть блок - zo
+" " закрыть все блоки - zM
+" " открыть все блоки - zR
 " " начальный уровень
 " set foldlevel=0
 " " авто-свертывание кода
@@ -312,26 +314,28 @@ endif
 " ----------------------------------------
 
 " ArgWrap - схлопывание и захлопывание содержимого скобок
-" ---------------
-" https://github.com/FooSoft/vim-argwrap
-Plug 'FooSoft/vim-argwrap'
-" ---------------
-map <Leader>aw :ArgWrap <CR>
+" !!! - 4 строк ниже:
+" " ---------------
+" " https://github.com/FooSoft/vim-argwrap
+" Plug 'FooSoft/vim-argwrap'
+" " ---------------
+" map <Leader>aw :ArgWrap <CR>
 " ----------------------------------------
 
 " Auto Pairs - парные скобки и ковычки
-" ---------------
-" https://github.com/jiangmiao/auto-pairs
-Plug 'jiangmiao/auto-pairs'
-" ---------------
-" System Shortcuts (alt-key or meta-key)
-" <M-p> : Toggle Autopairs (g:AutoPairsShortcutToggle) - отключено
-let g:AutoPairsShortcutToggle = ''
-" <M-e> : Fast Wrap (g:AutoPairsShortcutFastWrap) - обернуть
-" <M-n> : Jump to next closed pair (g:AutoPairsShortcutJump) - отключено
-let g:AutoPairsShortcutJump = ''
-" <M-b> : BackInsert (g:AutoPairsShortcutBackInsert) - отключено
-let g:AutoPairsShortcutBackInsert = ''
+" !!! - 11 строк ниже:
+" " ---------------
+" " https://github.com/jiangmiao/auto-pairs
+" Plug 'jiangmiao/auto-pairs'
+" " ---------------
+" " System Shortcuts (alt-key or meta-key)
+" " <M-p> : Toggle Autopairs (g:AutoPairsShortcutToggle) - отключено
+" let g:AutoPairsShortcutToggle = ''
+" " <M-e> : Fast Wrap (g:AutoPairsShortcutFastWrap) - обернуть
+" " <M-n> : Jump to next closed pair (g:AutoPairsShortcutJump) - отключено
+" let g:AutoPairsShortcutJump = ''
+" " <M-b> : BackInsert (g:AutoPairsShortcutBackInsert) - отключено
+" let g:AutoPairsShortcutBackInsert = ''
 " ----------------------------------------
 
 " Buffer Explorer - переключение открытых буферов
@@ -363,66 +367,70 @@ Plug 'vim-scripts/bufexplorer.zip'
 " ----------------------------------------
 
 " Ctrlp - нечеткий поиск
-" ---------------
-" https://github.com/ctrlpvim/ctrlp.vim
-Plug 'ctrlpvim/ctrlp.vim'
-" ---------------
-let g:ctrlp_map = '<Leader>cp'
-let g:ctrlp_by_filename = 1
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = 'rc'
+" !!! - 7 строк ниже:
+" " ---------------
+" " https://github.com/ctrlpvim/ctrlp.vim
+" Plug 'ctrlpvim/ctrlp.vim'
+" " ---------------
+" let g:ctrlp_map = '<Leader>cp'
+" let g:ctrlp_by_filename = 1
+" let g:ctrlp_show_hidden = 1
+" let g:ctrlp_working_path_mode = 'rc'
 " ----------------------------------------
 
 " Ctrlsf - изменение в нескольких файлах
 " ---------------
-if has('unix')
-	" https://github.com/dyng/ctrlsf.vim
-	Plug 'dyng/ctrlsf.vim'
-	" ---------------
-	nmap <Leader>cf <Plug>CtrlSFPrompt
-endif
+" !!! - 5 строк ниже:
+" if has('unix')
+	" " https://github.com/dyng/ctrlsf.vim
+	" Plug 'dyng/ctrlsf.vim'
+	" " ---------------
+	" nmap <Leader>cf <Plug>CtrlSFPrompt
+" endif
 " ----------------------------------------
 
 " Easy Align - выравнивание текста по параметрам
-" ---------------
-" https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
-" ---------------
-" Start interactive EasyAlign in visual mode (e.g. vipga) - отключено
-" xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip) - отключено
-" nmap ga <Plug>(EasyAlign)
-" используем <Leader>al вместо ga
-xmap <Leader>al <Plug>(EasyAlign)
+" !!! - 9 строк ниже:
+" " ---------------
+" " https://github.com/junegunn/vim-easy-align
+" Plug 'junegunn/vim-easy-align'
+" " ---------------
+" " Start interactive EasyAlign in visual mode (e.g. vipga) - отключено
+" " xmap ga <Plug>(EasyAlign)
+" " Start interactive EasyAlign for a motion/text object (e.g. gaip) - отключено
+" " nmap ga <Plug>(EasyAlign)
+" " используем <Leader>al вместо ga
+" xmap <Leader>al <Plug>(EasyAlign)
 " ----------------------------------------
 
 " EasyMotion - простые перемещения
-" ---------------
-" https://github.com/easymotion/vim-easymotion
-Plug 'easymotion/vim-easymotion'
-" ---------------
-" отключаем зависимость от регистра
-let g:EasyMotion_smartcase = 1
-" стандартные клавиши, где <Leader> - это <Leader><Leader>
-" Default Mapping      | Details
-"    ---------------------|----------------------------------------------
-"    <Leader>f{char}      | Find {char} to the right. See |f|.
-"    <Leader>F{char}      | Find {char} to the left. See |F|.
-"    <Leader>t{char}      | Till before the {char} to the right. See |t|.
-"    <Leader>T{char}      | Till after the {char} to the left. See |T|.
-"    <Leader>w            | Beginning of word forward. See |w|.
-"    <Leader>W            | Beginning of WORD forward. See |W|.
-"    <Leader>b            | Beginning of word backward. See |b|.
-"    <Leader>B            | Beginning of WORD backward. See |B|.
-"    <Leader>e            | End of word forward. See |e|.
-"    <Leader>E            | End of WORD forward. See |E|.
-"    <Leader>ge           | End of word backward. See |ge|.
-"    <Leader>gE           | End of WORD backward. See |gE|.
-"    <Leader>j            | Line downward. See |j|.
-"    <Leader>k            | Line upward. See |k|.
-"    <Leader>n            | Jump to latest "/" or "?" forward. See |n|.
-"    <Leader>N            | Jump to latest "/" or "?" backward. See |N|.
-"    <Leader>s            | Find(Search) {char} forward and backward.
+" !!! - 25 строк ниже:
+" " ---------------
+" " https://github.com/easymotion/vim-easymotion
+" Plug 'easymotion/vim-easymotion'
+" " ---------------
+" " отключаем зависимость от регистра
+" let g:EasyMotion_smartcase = 1
+" " стандартные клавиши, где <Leader> - это <Leader><Leader>
+" " Default Mapping      | Details
+" "    ---------------------|----------------------------------------------
+" "    <Leader>f{char}      | Find {char} to the right. See |f|.
+" "    <Leader>F{char}      | Find {char} to the left. See |F|.
+" "    <Leader>t{char}      | Till before the {char} to the right. See |t|.
+" "    <Leader>T{char}      | Till after the {char} to the left. See |T|.
+" "    <Leader>w            | Beginning of word forward. See |w|.
+" "    <Leader>W            | Beginning of WORD forward. See |W|.
+" "    <Leader>b            | Beginning of word backward. See |b|.
+" "    <Leader>B            | Beginning of WORD backward. See |B|.
+" "    <Leader>e            | End of word forward. See |e|.
+" "    <Leader>E            | End of WORD forward. See |E|.
+" "    <Leader>ge           | End of word backward. See |ge|.
+" "    <Leader>gE           | End of WORD backward. See |gE|.
+" "    <Leader>j            | Line downward. See |j|.
+" "    <Leader>k            | Line upward. See |k|.
+" "    <Leader>n            | Jump to latest "/" or "?" forward. See |n|.
+" "    <Leader>N            | Jump to latest "/" or "?" backward. See |N|.
+" "    <Leader>s            | Find(Search) {char} forward and backward.
 " ----------------------------------------
 
 " Emmet - автонаписание html, css
@@ -459,40 +467,43 @@ Plug 'drmikehenry/vim-fixkey'
 " ---------------
 " ----------------------------------------
 
-" Git
-if has('unix')
-	" Fugitive - расширение Git
-	" ---------------
-	" https://github.com/tpope/vim-fugitive
-	Plug 'tpope/vim-fugitive'
-	" ---------------
-	"  :Git, :Gstatus, :Gcommit, ...
+" Git - система контроля версий
+	"
+	" ----------------------------------------
+	"  GitGutter - git состояние
+	" !!! - 11 строк ниже:
+	" " ---------------
+	" " https://github.com/airblade/vim-gitgutter
+	" Plug 'airblade/vim-gitgutter'
+	" " ---------------
+	" set updatetime=250
+	" " :GitGutterToggle
+	" nmap <Leader>gg :GitGutterToggle <CR>
+	" " [c и ]c - перемещение между изменениями
+	" " Изменение:
+	" " <leader>hp - показать
+	" " <leader>hs - сохранить
+	" " <leader>hu - отменить
 	" ----------------------------------------
 	"
-	"  GitGutter - git состояние
-	" ---------------
-	" https://github.com/airblade/vim-gitgutter
-	Plug 'airblade/vim-gitgutter'
-	" ---------------
-	set updatetime=250
-	" :GitGutterToggle
-	nmap <Leader>gg :GitGutterToggle <CR>
-	" [c и ]c - перемещение между изменениями
-	" Изменение:
-	" <leader>hp - показать
-	" <leader>hs - сохранить
-	" <leader>hu - отменить
+	" Fugitive - расширение Git
+	" !!! - 4 строк ниже:
+	" " ---------------
+	" " https://github.com/tpope/vim-fugitive
+	" Plug 'tpope/vim-fugitive'
+	" " ---------------
+	" "  :Git, :Gstatus, :Gcommit, ...
 	" ----------------------------------------
 	"
 	" GV - просмотр коммитов
-	" ---------------
-	" https://github.com/junegunn/gv.vim
-	Plug 'junegunn/gv.vim'
-	" ---------------
-	" :GV - открыть просмотр коммитов
-	" :GV! - только для данного файла
+	" !!! - 5 строк ниже:
+	" " ---------------
+	" " https://github.com/junegunn/gv.vim
+	" Plug 'junegunn/gv.vim'
+	" " ---------------
+	" " :GV - открыть просмотр коммитов
+	" " :GV! - только для данного файла
 	" ----------------------------------------
-endif
 " ----------------------------------------
 
 " Lightline - строка статуса
@@ -507,14 +518,15 @@ endif
 " ----------------------------------------
 
 " ListToggle - вкл/выкл quickfix и location окон
-" ---------------
-" https://github.com/Valloric/ListToggle
-Plug 'Valloric/ListToggle'
-" ---------------
-" for example Ack(ag):
-let g:lt_quickfix_list_toggle_map = '<leader>qq'
-" for example Syntastic:
-let g:lt_location_list_toggle_map = '<leader>ql'
+" !!! - 7 строк ниже:
+" " ---------------
+" " https://github.com/Valloric/ListToggle
+" Plug 'Valloric/ListToggle'
+" " ---------------
+" " for example Ack(ag):
+" let g:lt_quickfix_list_toggle_map = '<leader>qq'
+" " for example Syntastic:
+" let g:lt_location_list_toggle_map = '<leader>ql'
 " ----------------------------------------
 
 " Livedown - автопросмотр MarkDown файлов в браузере
@@ -522,23 +534,24 @@ let g:lt_location_list_toggle_map = '<leader>ql'
 " $ npm install -g livedown
 "  ---------------
 " https://github.com/shime/vim-livedown
-if has('unix')
-	Plug 'shime/vim-livedown', { 'for': 'markdown' }
-	" ---------------
-	" :LivedownPreview - launch the Livedown server and preview your markdown file
-	" :LivedownKill - stop the Livedown server
-	" :LivedownToggle - launch/kill the Livedown server
-	nmap <Leader>md :LivedownToggle<CR>
-	"
-	" should markdown preview get shown automatically upon opening markdown buffer
-	let g:livedown_autorun = 0
-	" should the browser window pop-up upon previewing
-	let g:livedown_open = 1
-	" the port on which Livedown server will run
-	let g:livedown_port = 1337
-	" the browser to use
-	" let g:livedown_browser = "opera"
-endif
+" !!! - 16 строк ниже:
+" if has('unix')
+	" Plug 'shime/vim-livedown', { 'for': 'markdown' }
+	" " ---------------
+	" " :LivedownPreview - launch the Livedown server and preview your markdown file
+	" " :LivedownKill - stop the Livedown server
+	" " :LivedownToggle - launch/kill the Livedown server
+	" nmap <Leader>md :LivedownToggle<CR>
+	" "
+	" " should markdown preview get shown automatically upon opening markdown buffer
+	" let g:livedown_autorun = 0
+	" " should the browser window pop-up upon previewing
+	" let g:livedown_open = 1
+	" " the port on which Livedown server will run
+	" let g:livedown_port = 1337
+	" " the browser to use
+	" " let g:livedown_browser = "opera"
+" endif
 " ----------------------------------------
 
 " Matchit - перемещение по тегам HTML (%)
@@ -570,29 +583,30 @@ map <Leader>oo :MRU <CR>
 " ----------------------------------------
 
 " Multiple Cursors - многокурсорное редактирование
-" ---------------
-" https://github.com/terryma/vim-multiple-cursors/
-Plug 'terryma/vim-multiple-cursors'
-" ---------------
-" Default mapping
-" <C-n> - выделение следующего слова под курсором - отключено
-" let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_next_key=''
-" <C-p> - выделение предыдущего слова под курсором - отключено
-" let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_prev_key=''
-" <C-x> - пропустить текущее слово и перейти к следующему - отключено
-" let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_skip_key=''
-" выход из мультикурсорного режима (вместо <Esc> использовать <CR>)
-" let g:multi_cursor_quit_key='<Esc>'
-let g:multi_cursor_quit_key='<CR>'
-" многокурсорный поиск по <Leader>mc
-nmap <Leader>mc :MultipleCursorsFind 
-" редактирование:
-" c - удалить и перейти в режим редактирования
-" I - вставить в начало
-" A - вставить в конец
+" !!! - 22 строк ниже:
+" " ---------------
+" " https://github.com/terryma/vim-multiple-cursors/
+" Plug 'terryma/vim-multiple-cursors'
+" " ---------------
+" " Default mapping
+" " <C-n> - выделение следующего слова под курсором - отключено
+" " let g:multi_cursor_next_key='<C-n>'
+" let g:multi_cursor_next_key=''
+" " <C-p> - выделение предыдущего слова под курсором - отключено
+" " let g:multi_cursor_prev_key='<C-p>'
+" let g:multi_cursor_prev_key=''
+" " <C-x> - пропустить текущее слово и перейти к следующему - отключено
+" " let g:multi_cursor_skip_key='<C-x>'
+" let g:multi_cursor_skip_key=''
+" " выход из мультикурсорного режима (вместо <Esc> использовать <CR>)
+" " let g:multi_cursor_quit_key='<Esc>'
+" let g:multi_cursor_quit_key='<CR>'
+" " многокурсорный поиск по <Leader>mc
+" nmap <Leader>mc :MultipleCursorsFind 
+" " редактирование:
+" " c - удалить и перейти в режим редактирования
+" " I - вставить в начало
+" " A - вставить в конец
 " ----------------------------------------
 
 " NERD Commenter - комментирование для различных языков
@@ -656,19 +670,20 @@ Plug 'tpope/vim-repeat'
 
 " Vim-Session - расширенные сессии для Vim, требует:
 " (Vim-Misc - различные автонастройки скриптов Vim)
-" ---------------
-" https://github.com/xolox/vim-session
-Plug 'xolox/vim-session'
-" https://github.com/xolox/vim-misc
-Plug 'xolox/vim-misc'
-" ---------------
-" выключить автосохранение сессии
-let g:session_autosave = 'no'
-" выключить автозагрузку сессии
-let g:session_autoload = 'no'
-" :SaveSession name - сохранение сессии (без name - default)
-" :OpenSession name - загрузка сессии (без name - default)
-" :DeleteSession name - удаление сессии (без name - default)
+" !!! - 12 строк ниже:
+" " ---------------
+" " https://github.com/xolox/vim-session
+" Plug 'xolox/vim-session'
+" " https://github.com/xolox/vim-misc
+" Plug 'xolox/vim-misc'
+" " ---------------
+" " выключить автосохранение сессии
+" let g:session_autosave = 'no'
+" " выключить автозагрузку сессии
+" let g:session_autoload = 'no'
+" " :SaveSession name - сохранение сессии (без name - default)
+" " :OpenSession name - загрузка сессии (без name - default)
+" " :DeleteSession name - удаление сессии (без name - default)
 " ----------------------------------------
 
 " Startify - стартовый экран
@@ -688,18 +703,19 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 " ----------------------------------------
 
 " Surround - обернуть текст
-" ---------------
-" https://github.com/tpope/vim-surround
-Plug 'tpope/vim-surround'
-" ---------------
-" Normal mode:
-" ds  - удалить окружение (ds")
-" cs  - заменить окружение (cs"')
-" ys  - добавить окружение (ysiw")
-" yss - добавить окружение на всю линию (yss{)
-" ySS - добавить окружение на всю линию вокруг(ySS<p>)
-" Visual mode:
-" S   - добавить окружение (S<b>)
+" !!! - 11 строк ниже:
+" " ---------------
+" " https://github.com/tpope/vim-surround
+" Plug 'tpope/vim-surround'
+" " ---------------
+" " Normal mode:
+" " ds  - удалить окружение (ds")
+" " cs  - заменить окружение (cs"')
+" " ys  - добавить окружение (ysiw")
+" " yss - добавить окружение на всю линию (yss{)
+" " ySS - добавить окружение на всю линию вокруг(ySS<p>)
+" " Visual mode:
+" " S   - добавить окружение (S<b>)
 " ----------------------------------------
 
 " Tags - теги:
@@ -720,30 +736,32 @@ if has('unix')
 	" ----------------------------------------
 	"
 	" Tagbar-CSS - тэги для css
-	" ---------------
-	" https://github.com/mtscout6/vim-tagbar-css
-	Plug 'mtscout6/vim-tagbar-css'
-	" ---------------
-	" нужен файл ~/.ctags с содержимым:
-	" --langdef=CSS
-	" --langmap=css:.css.less.scss
-	" --regex-css=/^[ \t]*@([A-Za-z0-9_-]+)/@\1/v,var,variables/
-	" --regex-css=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
-	" --regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
-	" --regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
-	" --regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/
+	" !!! - 11 строк ниже:
+	" " ---------------
+	" " https://github.com/mtscout6/vim-tagbar-css
+	" Plug 'mtscout6/vim-tagbar-css'
+	" " ---------------
+	" " нужен файл ~/.ctags с содержимым:
+	" " --langdef=CSS
+	" " --langmap=css:.css.less.scss
+	" " --regex-css=/^[ \t]*@([A-Za-z0-9_-]+)/@\1/v,var,variables/
+	" " --regex-css=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
+	" " --regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
+	" " --regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
+	" " --regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/
 	" ----------------------------------------
 	"
 	" EasyTags - генерация файла тегов
-	" ---------------
-	" https://github.com/xolox/vim-easytags
-	" Plug 'xolox/vim-easytags'
-	" ---------------
-	" :UpdateTags -R в новом проекте
-	" let g:easytags_file = './tags'
-	" let g:easytags_auto_highlight = 0
-	" let g:easytags_events = ['BufWritePost']
-	" let g:easytags_async = 1
+	" !!! - 8 строк ниже:
+	" " ---------------
+	" " https://github.com/xolox/vim-easytags
+	" " Plug 'xolox/vim-easytags'
+	" " ---------------
+	" " :UpdateTags -R в новом проекте
+	" " let g:easytags_file = './tags'
+	" " let g:easytags_auto_highlight = 0
+	" " let g:easytags_events = ['BufWritePost']
+	" " let g:easytags_async = 1
 	" ----------------------------------------
 endif
 " ----------------------------------------
@@ -769,23 +787,63 @@ endif
 " ----------------------------------------
 
 " Jedi-vim - IDE для Python
-" ---------------
-" https://github.com/davidhalter/jedi-vim
-" (требуется установленный jedi)
-" $ pip install jedi
-Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-" ---------------
-" Completion <C-Space>
-" Goto assignments <leader>g (typical goto function)
-" Goto definitions <leader>d (follow identifier as far as possible, includes imports and statements)
-" Show Documentation/Pydoc K (shows a popup with assignments)
-" Renaming <leader>r
-" Usages <leader>n (shows all the usages of a name)
-" Open module, e.g. :Pyimport os (opens the os module)
+" !!! - 12 строк ниже:
+" " ---------------
+" " https://github.com/davidhalter/jedi-vim
+" " (требуется установленный jedi)
+" " $ pip install jedi
+" Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+" " ---------------
+" " Completion <C-Space>
+" " Goto assignments <leader>g (typical goto function)
+" " Goto definitions <leader>d (follow identifier as far as possible, includes imports and statements)
+" " Show Documentation/Pydoc K (shows a popup with assignments)
+" " Renaming <leader>r
+" " Usages <leader>n (shows all the usages of a name)
+" " Open module, e.g. :Pyimport os (opens the os module)
 " ----------------------------------------
 
-" YouCompleteMe + other code
-" 57 строк вниз от if:
+" Snippets - набор сниппетов
+" UltiSnips - движок для сниппетов
+" !!! - 12 строк ниже:
+" " ---------------
+" " https://github.com/honza/vim-snippets
+" Plug 'honza/vim-snippets'
+" " https://github.com/sirver/ultisnips
+" Plug 'sirver/ultisnips'
+" " ---------------
+" " вставить сниппет
+" let g:UltiSnipsExpandTrigger = "<c-a>"
+" " перемещение по сниппету
+" let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+" let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+" " список сниппетов для слова
+" let g:UltiSnipsListSnippets = "<m-w>"
+" ----------------------------------------
+
+" Syntastic - синтаксические ошибки кода
+" !!! - 16 строк ниже:
+" " ---------------
+" " https://github.com/vim-syntastic/syntastic
+" Plug 'vim-syntastic/syntastic'
+" " ---------------
+" " проверка при сохранении/открытии (кроме ZZ, :wq и :x)
+" " set statusline+=%#warningmsg#
+" " set statusline+=%{SyntasticStatuslineFlag()}
+" " set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" " отключение / включение
+" map <Leader>sy :SyntasticToggleMode <CR>
+" " : SyntasticInfo - доступные / активные чекеры
+" " : help syntastic-checkers - информация по чекерам
+" " let g:syntastic_<filetype>_checkers = ['<checker-name-1>','<checker-name-2>']
+" ----------------------------------------
+
+" YouCompleteMe + YCM-Generator
+" !!! - 20 строк ниже:
 " if has('unix')
 	" " YCM-Generator - генератор .ycm_extra_conf.py
 	" " ---------------
@@ -805,43 +863,6 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 	" let g:ycm_autoclose_preview_window_after_completion = 1
 	" let g:ycm_key_list_select_completion = ['<Down>']
 	" let g:ycm_key_list_previous_completion = ['<Up>']
-	" " ----------------------------------------
-	" "
-	" " Snippets - набор сниппетов
-	" " UltiSnips - движок для сниппетов
-	" " ---------------
-	" " https://github.com/honza/vim-snippets
-	" Plug 'honza/vim-snippets'
-	" " https://github.com/sirver/ultisnips
-	" Plug 'sirver/ultisnips'
-	" " ---------------
-	" " вставить сниппет
-	" let g:UltiSnipsExpandTrigger = "<c-a>"
-	" " перемещение по сниппету
-	" let g:UltiSnipsJumpForwardTrigger = "<c-j>"
-	" let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
-	" " список сниппетов для слова
-	" let g:UltiSnipsListSnippets = "<m-w>"
-	" " ----------------------------------------
-	" "
-	" " Syntastic - синтаксические ошибки кода
-	" " ---------------
-	" " https://github.com/vim-syntastic/syntastic
-	" Plug 'vim-syntastic/syntastic'
-	" " ---------------
-	" " проверка при сохранении/открытии (кроме ZZ, :wq и :x)
-	" " set statusline+=%#warningmsg#
-	" " set statusline+=%{SyntasticStatuslineFlag()}
-	" " set statusline+=%*
-	" let g:syntastic_always_populate_loc_list = 1
-	" let g:syntastic_auto_loc_list = 1
-	" let g:syntastic_check_on_open = 1
-	" let g:syntastic_check_on_wq = 0
-	" " отключение / включение
-	" map <Leader>sy :SyntasticToggleMode <CR>
-	" " : SyntasticInfo - доступные / активные чекеры
-	" " : help syntastic-checkers - информация по чекерам
-	" " let g:syntastic_<filetype>_checkers = ['<checker-name-1>','<checker-name-2>']
 	" " ----------------------------------------
 " endif
 " ----------------------------------------

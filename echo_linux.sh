@@ -7,8 +7,7 @@ echo "----------------------------"
 echo
 
 echo "*** For LiveDown:"
-echo "* Manually change .vimrc"
-echo "Need Nodejs with npm"
+echo "Need Nodejs"
 echo "$ npm install -g livedown"
 echo "Uncomment in linux.sh before"
 
@@ -16,13 +15,18 @@ echo "----------------------------"
 echo
 
 echo "*** For YouCompleteMe:"
-echo "* Manually change .vimrc"
-echo "Uncomment YouCompleteMe"
 echo "* If you not used YCM previously - run:"
 echo "$ ~/.vim/plugged/YouCompleteMe/install.py --clang-completer --tern-completer"
 echo "-------"
 echo "If need .ycm_extra_conf.py uncomment in linux.sh before"
 echo "If need .tern-config uncomment in linux.sh before"
+
+echo "----------------------------"
+echo
+
+echo "*** For Jedi-Vim:"
+echo "Need Jedi"
+echo "$ pip install jedi"
 
 echo "----------------------------"
 echo
@@ -36,7 +40,7 @@ echo
 echo "*** For Tags Plugs:"
 echo "Need Ctags"
 echo "-------"
-echo "If need .ctags for css uncomment in linux.sh before"
+echo "If need .ctags for CSS uncomment in linux.sh before"
 
 echo "----------------------------"
 echo
