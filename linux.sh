@@ -48,19 +48,19 @@ echo "*** .vimrc copied"
 echo 
 
 # копирование .ycm_extra_conf.py
-mv .ycm_extra_conf.py ~/.vim/
-echo "*** .ycm_extra_conf.py copied"
-echo
+# mv .ycm_extra_conf.py ~/.vim/
+# echo "*** .ycm_extra_conf.py copied"
+# echo
 
 # копирование .tern-config
-mv .tern-config ~/
-echo "*** .tern-config copied"
-echo
+# mv .tern-config ~/
+# echo "*** .tern-config copied"
+# echo
 
 # копирование .ctags
-mv .ctags ~/
-echo "*** .ctags copied"
-echo 
+# mv .ctags ~/
+# echo "*** .ctags copied"
+# echo 
 
 # библиотеки Xkbswitch в "~/.local/libxkbswitch/"
 # Make sure you have package libxkbfile-dev installed
