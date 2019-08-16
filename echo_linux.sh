@@ -51,6 +51,12 @@ echo ":PlugInstall"
 echo "----------------------------"
 echo
 
+echo "*** PowerLine for Bash, Fish, Tmux read:"
+echo "*** https://github.com/Koljasha/oh-my-linux/tree/master/install#powerline "
+
+echo "----------------------------"
+echo
+
 # PowerLine dir
 pldir=$(pip show powerline-status | grep Location | awk '{print $2}')
 pldir=$pldir/powerline
@@ -59,16 +65,6 @@ echo "*** PowerLine for Vim add to .vimrc:"
 plvim=$pldir/bindings/vim
 echo "set rtp+="$plvim
 echo "(in .vimrc by Koljasha for Linux automatically added)"
-
-echo "----------------------------"
-echo
-
-echo "*** PowerLine for Bash add to .bashrc:"
-plbash=$pldir/bindings/bash/powerline.sh
-echo "powerline-daemon -q"
-echo "POWERLINE_BASH_CONTINUATION=1"
-echo "POWERLINE_BASH_SELECT=1"
-echo ". "$plbash
 
 echo
 echo "----------------------------"
