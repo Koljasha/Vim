@@ -152,6 +152,9 @@ let &keywordprg=':help'
 " <Leader>hl - отключение подсветки поиска hlsearch
 nmap <Leader>hl :nohlsearch <CR>
 
+" <Leader>qq - закрытие буфера без сохранения
+nmap <Leader>qq :bd! <CR>
+
 " сменить split
 nmap <C-Right> <C-W>l
 nmap <C-Left> <C-W>h
