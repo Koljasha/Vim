@@ -161,6 +161,12 @@ nmap <C-Left> <C-W>h
 nmap <C-Up> <C-W>k
 nmap <C-Down> <C-W>j
 
+" изменить размера split
+nmap <C-S-Right> <C-W>>
+nmap <C-S-Left> <C-W><
+nmap <C-S-Up> <C-W>+
+nmap <C-S-Down> <C-W>-
+
 " F4 - ражим вставки (Paste) 
 map <F4> :set paste! <CR>
 imap <F4> <Esc> :set paste! <CR>
