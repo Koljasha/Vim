@@ -6,44 +6,44 @@ echo "----------------------------"
 echo "----------------------------"
 echo
 
-echo "*** For LiveDown:"
-echo "Need Nodejs"
-echo "$ npm install -g livedown"
-echo "Uncomment in linux.sh before"
+# echo "*** For LiveDown:"
+# echo "Need Nodejs"
+# echo "$ npm install -g livedown"
+# echo "Uncomment in linux.sh before"
 
-echo "----------------------------"
-echo
+# echo "----------------------------"
+# echo
 
-echo "*** For YouCompleteMe:"
-echo "* If you not used YCM previously - run:"
-echo "$ ~/.vim/plugged/YouCompleteMe/install.py --clang-completer --tern-completer"
-echo "-------"
-echo "If need .ycm_extra_conf.py uncomment in linux.sh before"
-echo "If need .tern-config uncomment in linux.sh before"
+# echo "*** For YouCompleteMe:"
+# echo "* If you not used YCM previously - run:"
+# echo "$ ~/.vim/plugged/YouCompleteMe/install.py --clang-completer --tern-completer"
+# echo "-------"
+# echo "If need .ycm_extra_conf.py uncomment in linux.sh before"
+# echo "If need .tern-config uncomment in linux.sh before"
 
-echo "----------------------------"
-echo
+# echo "----------------------------"
+# echo
 
-echo "*** For Jedi-Vim:"
-echo "Need Jedi"
-echo "$ pip install jedi"
+# echo "*** For Jedi-Vim:"
+# echo "Need Jedi"
+# echo "$ pip install jedi"
 
-echo "----------------------------"
-echo
+# echo "----------------------------"
+# echo
 
-echo "*** For Ack.vim:"
-echo "Need The Silver Searcher"
+# echo "*** For Ack.vim:"
+# echo "Need The Silver Searcher"
 
-echo "----------------------------"
-echo
+# echo "----------------------------"
+# echo
 
-echo "*** For Tags Plugs:"
-echo "Need Ctags"
-echo "-------"
-echo "If need .ctags for CSS uncomment in linux.sh before"
+# echo "*** For Tags Plugs:"
+# echo "Need Ctags"
+# echo "-------"
+# echo "If need .ctags for CSS uncomment in linux.sh before"
 
-echo "----------------------------"
-echo
+# echo "----------------------------"
+# echo
 
 echo "*** Run in Vim:"
 echo ":PlugInstall"
@@ -51,7 +51,7 @@ echo ":PlugInstall"
 echo "----------------------------"
 echo
 
-echo "*** PowerLine for Bash, Fish, Tmux read:"
+echo "*** PowerLine for Bash, Zsh, Fish, Tmux read:"
 echo "*** https://github.com/Koljasha/oh-my-linux/tree/master/install#powerline "
 
 echo "----------------------------"

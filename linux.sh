@@ -11,14 +11,14 @@ echo "----------------------------"
 echo
 
 
-#проверка YCM
-ycmpl=$HOME"/.vim/plugged/YouCompleteMe"
-if [[ -e $ycmpl ]]
-then
-	cp -r $ycmpl ./
-	echo "*** Old YCM copied"
-	echo 
-fi
+# проверка YCM
+# ycmpl=$HOME"/.vim/plugged/YouCompleteMe"
+# if [[ -e $ycmpl ]]
+# then
+# 	cp -r $ycmpl ./
+# 	echo "*** Old YCM copied"
+# 	echo 
+# fi
 
 # удаление старого окружения
 rm -rf ~/.vim/ ~/.vim*
@@ -33,14 +33,14 @@ echo "*** Vim-plug installed"
 echo 
 
 # установка YCM (если был)
-ycmpl=./YouCompleteMe
-if [[ -e $ycmpl ]]
-then
-	mkdir -p ~/.vim/plugged
-	cp -r $ycmpl ~/.vim/plugged/
-	echo "*** New YCM copied"
-	echo 
-fi
+# ycmpl=./YouCompleteMe
+# if [[ -e $ycmpl ]]
+# then
+# 	mkdir -p ~/.vim/plugged
+# 	cp -r $ycmpl ~/.vim/plugged/
+# 	echo "*** New YCM copied"
+# 	echo 
+# fi
 
 # копирование .vimrc
 cp vimrc ~/.vimrc
