@@ -657,7 +657,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " автоматически обновлять буфер после переименовывания файла
 let NERDTreeAutoDeleteBuffer = 1
 " показать скрытые файлы
-" let NERDTreeShowHidden = 1
+let NERDTreeShowHidden = 1
 " нумерация строк
 let NERDTreeShowLineNumbers = 1
 " открывать с правой стороны
