@@ -170,19 +170,39 @@ nmap <C-S-Left> <C-W><
 nmap <C-S-Up> <C-W>+
 nmap <C-S-Down> <C-W>-
 
-" F4 - ражим вставки (Paste) 
-map <F4> :set paste! <CR>
-imap <F4> <Esc> :set paste! <CR>
+" F4 - ражим вставки (Paste).
+map <F4> :set paste! <CR> 
+imap <F4> <Esc> :set paste! <CR> 
 
 " F5 - сохранение файла
-map <F5> :w! <CR>
-imap <F5> <Esc> :w! <CR>
+map <F5> :w! <CR> 
+imap <F5> <Esc> :w! <CR> 
 
 " S-F5 - сохранить с sudo
-map <S-F5> :execute ':silent w !sudo tee % > /dev/null' <bar> :edit! <cr>
+map <S-F5> :execute ':silent w !sudo tee % > /dev/null' <bar> :edit! <cr> 
 
-" F6 - проверка орфографии
-map <F6> :setlocal spelllang=ru spell! <CR>
+" F7 - показать пробелы и табы
+map <F7> :set list! <CR> 
+
+" Shift-F7 - использовать табы вместо пробелов
+map <S-F7> :set noet! <CR> 
+
+" F8 - отключение нумерации (всей - относительной)
+map <F8> :set number! relativenumber! <CR> 
+map <S-F8> :set relativenumber! <CR> 
+
+" F9 - удаление повторяющихся пробелов + пробелов в конце предложения
+" map <F9> :%s/\  */\ /g<CR> <bar> :%s/\ $//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
+" F9 - удаление пустых строк (возможно с пробелами)
+" map <F9> :%s/^\s*\n//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
+
+" F10 - запуск скрипта Python
+" nmap <F10> <F5>:!clear;python % <CR>
+" imap <F10> <Esc><F5>:!clear;python % <CR>
+" vmap <F10> <Esc><F5>:!clear;python % <CR>
+
+" F11 - проверка орфографии
+map <F11> :setlocal spelllang=ru spell! <CR> 
 " ]s - следующее слово с ошибкой
 " [s - предыдущее слово с ошибкой
 " z= - замена из списка
@@ -190,30 +210,10 @@ map <F6> :setlocal spelllang=ru spell! <CR>
 " zw - убрать из словаря:
 " zG - игнорировать слово:
 
-" F7 - показать пробелы и табы
-map <F7> :set list! <CR>
-
-" Shift-F7 - использовать табы вместо пробелов
-map <S-F7> :set noet! <CR>
-
-" F8 - отключение нумерации (всей - относительной)
-map <F8> :set number! relativenumber! <CR>
-map <S-F8> :set relativenumber! <CR>
-
-" F10 - запуск скрипта Python
-" nmap <F10> <F5>:!clear;python % <CR>
-" imap <F10> <Esc><F5>:!clear;python % <CR>
-" vmap <F10> <Esc><F5>:!clear;python % <CR>
-
-" F11 - удаление повторяющихся пробелов + пробелов в конце предложения
-" map <F11> :%s/\  */\ /g<CR> <bar> :%s/\ $//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
-" F11 - удаление пустых строк (возможно с пробелами)
-" map <F11> :%s/^\s*\n//g<CR> <bar> <Leader>hl<CR> <bar> <Esc>
-
 " F12 - полная русская раскладка (на выборе English)
-map <F12> :set keymap=russian-jcukenwin <CR>
+map <F12> :set keymap=russian-jcukenwin <CR> 
 imap <F12> <Esc>:set keymap=russian-jcukenwin<CR>i
-map <S-F12> :set keymap= <CR>
+map <S-F12> :set keymap= <CR> 
 imap <S-F12> <Esc>:set keymap=<CR>i
 
 " автодополнения i_ctrl-x_:
