@@ -58,6 +58,10 @@ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbol
 mkdir -p ~/.config/fontconfig/conf.d/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
+
+# Nerd Font - https://github.com/ryanoasis/nerd-fonts
+curl -fLo "$font_dirDroid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
 echo "*** Patched fonts for PowerLine installed"
 echo
 
