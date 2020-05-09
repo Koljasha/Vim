@@ -270,6 +270,7 @@ imap <S-F12> <Esc>:set keymap=<CR>i
 	" отключен - Tagbar-CSS - теги для css
 	" отключен - EasyTags - генерация файла тегов
 " Xkbswitch - смена на En при переходе в командный режим
+" Vim-Devicons - иконки Nerd
 " отключен - Jedi-vim - IDE для Python (для Python)
 " отключен - Snippets - набор сниппетов
 " отключен - (UltiSnips - движок для сниппетов)
@@ -796,6 +797,13 @@ if has('unix')
 elseif has('win32') || has('win64')
 	let g:XkbSwitchLib = 'C:\Program Files (x86)\Vim\libxkbswitch\libxkbswitch64.dll'
 endif
+" ----------------------------------------
+
+" Vim-Devicons - иконки Nerd
+" ---------------
+" https://github.com/ryanoasis/vim-devicons
+" ---------------
+Plug 'ryanoasis/vim-devicons'
 " ----------------------------------------
 
 " Jedi-vim - IDE для Python
