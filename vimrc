@@ -902,7 +902,7 @@ call plug#end()
 if has('unix')
 	
 	" используем PowerLine
-	set rtp+=/home/koljasha/soft/conda/lib/python3.7/site-packages/powerline/bindings/vim
+	set rtp+=/home/koljasha/soft/conda/lib/python3.8/site-packages/powerline/bindings/vim
 	
 	if has('gui_running')
 		" для PaperColor:

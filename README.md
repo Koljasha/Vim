@@ -15,7 +15,7 @@ vim -c PlugInstall
 * в .vimrc поправить версию Python и пользователя:
 ```
 " используем PowerLine
-    set rtp+=/home/koljasha/soft/conda/lib/python3.7/site-packages/powerline/bindings/vim
+    set rtp+=/home/koljasha/soft/conda/lib/python3.8/site-packages/powerline/bindings/vim
 ```
 
 Пример для Windows (**в windows.sh исправить версию Vim и, соответственно, каталоги**)
