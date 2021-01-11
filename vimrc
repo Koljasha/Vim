@@ -924,6 +924,9 @@ if has('unix')
 	else
 		" для PaperColor:
 		colorscheme PaperColor
+		" прозрачность
+		highlight Normal guibg=NONE ctermbg=NONE
+
 		"
 		" цвет шрифта при проверке орфографии
 		" красный цвет - орфографические ошибки
