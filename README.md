@@ -1,4 +1,4 @@
-## Oh My Vim
+## Oh My Vim ("deprecated" - look [Arch Linux Installer](https://github.com/Koljasha/archlinux_installer) for current settings)
 
 * файлы настройки Vim для Linux и Windows
 * скрипты установки окружения
